@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Selectors</title>
+        <style>
+            .select{
+                text-align: center;
+                color: tomato;
+                background-color: antiquewhite;
+            }
+            p.center{
+                text-align: center;
+                color: red;
+            }
+            p.work{
+                background-color: pink;
+                text-decoration:underline;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="select">The CSS class Selector:</h1>
+        <p class="select">The class selector selects HTML elements with a specific class attribute.</p>
+        <h3 class="select">To select elements with a specific class, write a period (.) character, followed by the class name.</h3>
+        <h3>You can also specify that only specific HTML elements should be affected by a class.</h3>
+    </body>
+    <hr>
+    <body>
+        <h1>This heading will not affected bcoz we have not specifies the class here. </h1>
+        <p class="center">This paragraph will be red and center-aligned.</p>
+        <hr>
+        <p class="center work">This paragraph will be in red, center-aligned, pink background-color,30px font-size and dotted text-decoration.</p>
+    </body>
+
+</html>
