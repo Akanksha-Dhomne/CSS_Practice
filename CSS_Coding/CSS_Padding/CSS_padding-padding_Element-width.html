@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS padding and element width</title>
+        <style>
+            .ex1{
+                background-color: aqua;
+                border: 1px solid black;
+                width:300px;
+            }
+            .ex2{
+                background-color:slateblue;
+                border: 1px solid black;
+                width:300px;
+                padding:30px;
+            }
+            .first{
+                background-color: pink;
+                border: 1px solid black;
+                width:300px;
+            }
+            .second{
+                background-color:slateblue;
+                border: 1px solid black;
+                width:300px;
+                padding:30px;
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Padding and Element Width</h1>
+        <p>The CSS <span style="color: red;background-color: aliceblue;">width</span> property specifies the width of the element's content area. The content area is the portion inside the padding, border, and margin of an element (the box model).</p>
+        <p>So, if an element has a specified width, the padding added to that element will be added to the total width of the element. This is often an undesirable result.</p>
+        <p>Here, the <span style="color: blue;">div</span> element is given a width of 300px. However, the actual width of the <span style="color: blue;">div</span> element will be 350px (300px + 25px of left padding + 25px of right padding):</p>
+        
+        <h2>Padding and element width</h2>
+        <div class="ex1">This div is 300px wide.</div>
+        
+        <br>
+        
+        <div class="ex2">The width of this div is 350px, even though it is defined as 300px in the CSS.</div>
+    
+        <h4>To keep the width at 300px, no matter the amount of padding, you can use the box-sizing property. This causes the element to maintain its actual width; if you increase the padding, the available content space will decrease.</h4>
+        <p>Use the box-sizing property to keep the width at 300px, no matter the amount of padding:</p>
+        <h2>Padding and element width - with box-sizing</h2>
+        <div class="first">This div is 300px wide.</div>
+
+        <br>
+
+        <div class="second">The width of this div remains at 300px, in spite of the 50px of total left and right padding, because of the box-sizing: border-box property.
+        </div>
+    </body>
+</html>

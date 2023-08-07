@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS paddding - Shorthand property</title>
+        <style>
+            div{
+                background-color: aqua;
+                border:1px solid black;
+                padding:50px 40px 25px 90px;
+            }
+            .second{
+                background-color: aqua;
+                border:1px solid black;
+                padding:50px 90px; 
+            }
+            .third{
+                background-color: aqua;
+                border:1px solid black;
+                padding:25px 90px 75px;
+            }
+            .fourth{
+                background-color: aqua;
+                border:1px solid black;
+                padding:90px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Padding - Shorthand Property</h1>
+        <p>To shorten the code, it is possible to specify all the padding properties in one property.</p>
+        <p>The padding property is a shorthand property for the following individual padding properties:</p>
+        <ul>
+            <li>padding-top</li>
+            <li>padding-right</li>
+            <li>padding-bottom</li>
+            <li>padding-left</li>
+        </ul>
+        <p>So, here is how it works:</p>
+        <p>If the padding property has four values:</p>
+        <ul> 
+            <li><b>padding:50px 40px 25px 90px;</b></li>
+            <ul>
+                <li>top padding is 50px</li>
+                <li>right padding is 40px</li>
+                <li>bottom paddding is 25px</li>
+                <li>left padding is 90px</li>
+            </ul>
+        </ul>
+
+        <h2>The padding shorthand property - 4 values</h2>
+        <div>This div element has a top padding of 50px, a right padding of 40px, a bottom padding of 25px, and a left padding of 90px.</div>
+        <hr>
+        <h3>The padding shorthand property - 2 values</h3>
+        <div class="second">This div element has a top and bottom padding of 50px, and a right and left padding of 90px</div>
+        <hr>
+        <h3>The padding shorthand property - 3 values</h3>
+        <div class="third">This div element has a top padding 25px, a right and left padding of 90px, and a bottom paddding of 75px</div>
+        <hr>
+        <h3>The padding shorthand property - 1 value</h3>
+        <div class="fourth">This div element has a top, bottom, right and left padding of 90px</div>
+    </body>
+</html>
