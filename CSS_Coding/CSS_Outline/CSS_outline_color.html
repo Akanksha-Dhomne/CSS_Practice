@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Outline</title>
+        <style>
+            p.first{
+                border:3px solid black;
+                outline-style:solid ;
+                outline-color:hotpink;
+            }
+            p.second{
+                border:3px solid black;
+                outline-style:groove;
+                outline-color:blue;
+            }
+            p.third{
+                border:3px solid black;
+                outline-style:dotted ;
+                outline-color:hsl(0,100%,50%);
+            }
+            p.fourth{
+                border:3px solid black;
+                outline-style:dashed;
+                outline-color:#00ff00;
+            }
+            p.fifth{
+                border:3px solid black;
+                outline-style:outset;
+                outline-color:rgb(187,187,187);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Outline Color</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">outline-color</span> property is used to set color of the outline.</p>
+        <p>The color can be set by:</p>
+        <ul>
+            <li><b>Name:</b> specify a color name ,like "pink"</li>
+            <li><b>Hex:</b> specify a hex value, like "#ff0000"</li>
+            <li><b>RGB:</b> specify a RGB value, like "rgb(255,0,0)"</li>
+            <li><b>HSL:</b> Specify a HSl value, like "hsl(0,100%,50%)"</li>
+            <li><b>invert:</b> performs a color inversion (which ensures that the outline is visible, regardless of color background)</li>
+        </ul>
+
+        <h2>The outline-color property</h2>
+        <p>The outline-color property is used to set color of the outline.</p><br>
+        <p class="first">A solid pink outline</p><br>
+        <p class="second">An groove blue outline</p><br>
+        <p class="third">A dotted red outline</p><br>
+        <p class="fourth">A dsahed green outline</p><br>
+        <p class="fifth">An outset gray outline</p><br>
+    </body>
+</html>
