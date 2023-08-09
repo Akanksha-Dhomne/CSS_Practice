@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Text</title>
+        <style>
+            .A{
+                text-decoration: underline;
+            }
+            .B{
+                text-decoration: underline crimson;
+            }
+            .C{
+                text-decoration:underline blueviolet double;
+            }
+            .D{
+                text-decoration: underline salmon double 6px;
+            }
+            /* for text-decoration:none */
+            a{
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>The Shorthand Property</h1>
+        <p><span style="color: red;background-color: aliceblue;">text-decoration </span>property is a shorthand property for:</p>
+        <ul>
+            <li><span style="color: red;background-color: aliceblue;">text-decoration-line </span>(required)</li>
+            <li><span style="color: red;background-color: aliceblue;">text-decoration-color</span>(optional)</li>
+            <li><span style="color: red;background-color: aliceblue;">text-decoration-style</span>(optional)</li>
+            <li><span style="color: red;background-color: aliceblue;">text-decoration-thickness</span>(optional)</li>
+        </ul>
+        
+        <h2 class="A">text Decoration</h2>
+        <h2 class="B">text Decoration</h2>
+        <h2 class="C">text Decoration</h2>
+        <h2 class="D">text Decoration</h2>
+
+        <hr>
+        <hr>
+
+        <h1>A Small Tip</h1>
+        <p>All links in HTML are underlined by default. Sometimes you see that links are styled with no underline. The<span style="color: red;background-color: aliceblue;"> text-decoration: none;</span> is used to remove the underline from links, like this:</p>
+
+        <h2>A line with no underline: <a href="https://www.google.com">Visit Google!</a></h2>
+
+    </body>
+</html>

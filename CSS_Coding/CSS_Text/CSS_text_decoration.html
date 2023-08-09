@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Text</title>
+        <style>
+            .first{
+                text-decoration: overline;
+            }
+            .second{
+                text-decoration: line-through;
+            }
+            .third{
+                text-decoration: overline underline;
+            }
+            .fourth{
+                text-decoration: underline;
+            }
+            /* specifing text-decoration-color and text-decoration in one class */
+            .a{
+                text-decoration: overline;
+                text-decoration-color: red;
+            }
+            .b{
+                text-decoration: line-through;
+                text-decoration-color: green;
+            }
+            .c{
+                text-decoration: overline underline;
+                text-decoration-color:blue;
+            }
+            .d{
+                text-decoration: underline;
+                text-decoration-color: crimson;
+            }
+            /* specifing text-decoration-style and text-decoration in one class */
+            .one{
+                text-decoration:underline;
+                text-decoration-style: dashed; 
+            }
+            .two{
+                text-decoration: underline;
+                text-decoration-style: dotted;
+            }
+            .three{
+                text-decoration:underline;
+                text-decoration-style: double;
+            }
+            .four{
+                text-decoration: underline;
+                text-decoration-style: solid;   /* this is default */ 
+            }
+            .five{
+                text-decoration: underline;
+                text-decoration-style:wavy;
+            }
+            .six{
+                text-decoration: underline;
+                text-decoration-style:wavy;
+                text-decoration-color: crimson;
+            }
+            /* Specify the Thickness for the decoration line */
+            .A{
+                text-decoration:underline;
+                text-decoration-thickness: auto;
+            }
+            .B{
+                text-decoration: underline;
+                text-decoration-thickness: 8px;
+            }
+            .C{
+                text-decoration:underline;
+                text-decoration-thickness:30%;
+            }
+            .D{
+                text-decoration: underline;
+                text-decoration-style:double;
+                text-decoration-color: crimson;
+                text-decoration-thickness:6px ;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Text Decoration</h1>
+        <p>We can do text Decoration by using following properties:</p>
+        <ul>
+            <li><span style="color: red;background-color: aliceblue;">text-decoration-line</span></li>
+            <li><span style="color: red;background-color: aliceblue;">text-decoration-color</span></li>
+            <li><span style="color: red;background-color: aliceblue;">text-decoration-style</span></li>
+            <li><span style="color: red;background-color: aliceblue;">text-decoration-thickness</span></li>
+            <li><span style="color: red;background-color: aliceblue;">text-decoration</span></li>
+        </ul>
+        <h1>Add a Decoration line to text</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">text-decoration-line</span> property is used to add a Decoration line to text.</p>
+        <p><b>Tip:</b>We can combine more than one value, like bidi-overline and underline to display lines both over and under a text.</p>
+
+        <h2 class="first">Overline text Decoration</h2>
+        <h2 class="second">Line through text Decoration</h2>
+        <h2 class="third">overline and underline text Decoration</h2>
+        <h2 class="fourth">Underline text Decoration</h2>
+
+        <hr>
+        <hr>
+        <hr>
+
+        <h1>Specify a color for the Decoration line</h1>
+        <p><span style="color: red;background-color: aliceblue;">text-decoration-color</span> property is used to set the color of the decoration line</p>
+        <h2 class="a">Overline text Decoration</h2>
+        <h2 class="b">Line through text Decoration</h2>
+        <h2 class="c">overline and underline text Decoration</h2>
+        <h2 class="d">Underline text Decoration</h2>
+
+        <hr>
+        <hr>
+        <hr>
+
+        <h1>Specify a style for the Decoration line</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">text-decoration-style</span> property is used to set the style of the decoration line</p>
+        <h2 class="one">text Decoration</h2>
+        <h2 class="two">text Decoration</h2>
+        <h2 class="three">text Decoration</h2>
+        <h2 class="four">text Decoration</h2>
+        <h2 class="five">text Decoration</h2>
+        <h2 class="six">text Decoration</h2>
+
+        <hr>
+        <hr>
+        <hr>
+
+        <h1>Specify the Thickness for the decoration line</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">text-decoration-thickness</span> property is used to set the thickness of the decoration line.</p>
+        <h2 class="A">text Decoration</h2>
+        <h2 class="B">text Decoration</h2>
+        <h2 class="C">text Decoration</h2>
+        <h2 class="D">text Decoration</h2>
+     
+    </body>
+</html>
