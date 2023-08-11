@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Lists</title>
+        <style>
+            /* for unordered list */
+            ul.first{
+                list-style-type:square;
+            }
+            ul.second{
+                list-style-type:circle;
+            }
+            ul.third{
+                list-style-type:disc;
+            }
+            /* for ordered list */
+            ol.one{
+                list-style-type:upper-alpha;
+            }
+            ol.two{
+                list-style-type:upper-roman;
+            }
+            ol.three{
+                list-style-type:lower-alpha;
+            }
+            ol.four{
+                list-style-type:lower-roman;
+            }
+            /* for list-style-type:none */
+            ul.none{
+                list-style-type: none;
+            }
+            ol.none1{
+                list-style-type: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Different List Item markers</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">list-style-type</span> property specifies the type of list item markers</p>
+        <p>The following ez shows some of the avaible list item markers:</p>
+        
+        <p>for unorderded list</p>
+        <ul class="first">      <!--This is another way to write the same thing in inline method style="list-style-type: circle;" -->
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Java</li>
+            <li>Javascript</li>
+        </ul>
+
+        <ul class="second">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Java</li>
+            <li>Javascript</li>
+        </ul>
+
+        <ul class="third">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Java</li>
+            <li>Javascript</li>
+        </ul>
+
+        <p>for ordered list</p>
+        <ol class="one">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Java</li>
+            <li>Javascript</li>
+        </ol>
+
+        <ol class="two">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Java</li>
+            <li>Javascript</li>
+        </ol>
+
+        <ol class="three">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Java</li>
+            <li>Javascript</li>
+        </ol>
+
+        <ol class="four">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Java</li>
+            <li>Javascript</li>
+        </ol>
+        
+        <h2>Remove default settings</h2>
+        <p>The <span style="color: red;background-color: aliceblue;">list-style-type:none</span> property can alsonbe used to remove the markers/bullets. Note that the list also has default margin and padding. to remove this ,add <span style="color: red;background-color: aliceblue;">margin:0 </span>and <span style="color: red;background-color: aliceblue;">padding:0</span> to <span style="color: red;background-color: aliceblue;">ul</span> or <span style="color: red;background-color: aliceblue;">ol</span></ol></ul></p>
+        
+        <ul class="none">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Java</li>
+            <li>Javascript</li>
+        </ul>
+        
+        <ol class="none1">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Java</li>
+            <li>Javascript</li>
+        </ol>
+    </body>
+</html>
