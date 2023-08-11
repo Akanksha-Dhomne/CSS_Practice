@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Links</title>
+        <style>
+            a:link{
+                color: green;
+                background-color: greenyellow;
+                text-decoration: none;
+            }
+            a:visited{
+                color:crimson;
+                background-color: pink;
+                text-decoration:underline;
+            }
+            a:hover{
+                color: darkblue;
+                background-color: lightblue;
+                text-decoration: underline;
+            }
+            a:active{
+                color: purple;
+                background-color: plum;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Links States and Text decoration</h1>
+        <p>In addition, links can be styled differently depending on what <b>State</b> they are in.</p>
+        <p>The <span style="color: red;background-color: aliceblue;">text-decoration</span> property is mostly used to remove underlines from links: </p>
+        <ul>
+            <li><span style="color: red;background-color: aliceblue;">a:link -</span> a normal, unvisited link</li>
+            <li><span style="color: red;background-color: aliceblue;">a:visited -</span> a link the user has visited</li>
+            <li><span style="color: red;background-color: aliceblue;">a:hover -</span> a link when the user mouses over it</li>
+            <li><span style="color: red;background-color: aliceblue;">a:active -</span> a link the moment it s clicked</li>
+        </ul>
+
+        
+        <h2>Styling a link dpending on state and text decoration property</h2>
+        <p><b><a href="https://www.google.com" traget="_blank">Click here!</a></b></p>
+        <p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS defination in order to be effective.</p>
+        <p><b>Note:</b> a:active MUST come after a:hover in the CSS defination in order to be effective. </p>
+    </body>
+</html>
