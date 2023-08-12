@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Tables</title>
+        <style>
+          table{
+            border-collapse: collapse;
+            width:100%; 
+          }
+          th,td{
+            padding:8px;
+            text-align: center;
+          }
+          tr:nth-child(even) {
+            background-color:rgb(255, 218, 218);
+          }
+          /* th{
+            background-color:crimson ;
+            color:white;
+          } */
+        </style>
+    </head>
+    <body>
+        <h1>CSS table Style</h1>
+        <h2>Striped Tables</h2>
+        <p>For zebra-striped tables, use the <span style="color: red;background-color: aliceblue;">nth-child()</span> selector and add a <span style="color: red;background-color: aliceblue;">background-color</span> to all <b>even (or old) table rows:</b></p>
+        <table>
+            <tr>
+                <th>Fruit Name</th>
+                <th>Scientific Name</th>
+                <th>Hindi Name</th>
+            </tr>
+            <tr>
+                <td>Apple</td>
+                <td>Malus domestica</td>
+                <td>Seb</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>Musa Paradisiaca</td>
+                <td>Kela</td>
+            </tr>
+            <tr>
+                <td>Orange</td>
+                <td>Citrus aurantium</td>
+                <td>Naarangee</td>
+            </tr>
+            <tr>
+                <td>Mango</td>
+                <td>Mangifera indica</td>
+                <td>Aam</td>
+            </tr>
+            <tr>
+                <td>Pineapple</td>
+                <td>Ananas comosus</td>
+                <td>Anaanaas</td>
+            </tr>
+        </table>
+    </body>
+</html>
