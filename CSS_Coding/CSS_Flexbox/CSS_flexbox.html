@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Flexbox</title>
+        <style>
+            body{
+                background-color: antiquewhite;
+            }
+            .flex-container{
+                display: flex;
+                background-color: crimson;
+            }
+            .flex-container > div{
+                background-color: pink;
+                margin: 20px;
+                padding:30px;
+                font-size: 50px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Flexbox</h1>
+        <h2>CSS Flexbox layout Module</h2>
+        <p>Before the Flexbox layout module, there were four layout modes:</p>
+        <ul>
+            <li>Block, for sections in a webpage</li>
+            <li>Inline, for text</li>
+            <li>Table, for two-dimensional table data</li>
+            <li>Positioned, for explicit postion of an element</li>
+        </ul>
+        <p>The Flexible Box layout module, makes it easier to desgin flexible responsive layout structure without using float or positioning.</p>
+        
+        <h2>Flexbox Elements</h2>
+        <p>To start using the Flexbox model, you need to first define a flex container.</p>
+        
+        <h1>Create a Flex container</h1>
+        <p>A flexible layout must have a parent element with the <b><i>display</i></b> property set to <b><i>flex</i></b>.</p>
+        <p>Direct child elements(s) of the flexible container automatically becomes flexible items.</p>
+        
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+        <h3>The element above represented a flex container (the crimson area) with three flex items.</h3>
+    </body>
+</html>

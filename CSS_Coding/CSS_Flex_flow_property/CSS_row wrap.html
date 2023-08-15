@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Flexbox</title>
+        <style>
+            .flex-container{
+                display: flex;
+                flex-flow:row wrap;
+                background-color: seagreen;
+            }
+            .flex-container>div{
+                background-color: rgb(186, 255, 186);
+                line-height: 80px;
+                width:100px;
+                margin: 20px;
+                font-size: 40px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>The flex-flow property</h1>
+        <p>The <span style="color:red;background-color: aliceblue;">flex-flow</span> property is a shorthand property for setting both the <span style="color:red;background-color: aliceblue;"> flex-direction</span> and <span style="color:red;background-color: aliceblue;">flex-wrap</span> properties.</p>
+        <p>Using flex-direction = row and flex-wrap = wrap property</p>
+
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+            <div>14</div>
+        </div>
+
+    </body>
+</html>

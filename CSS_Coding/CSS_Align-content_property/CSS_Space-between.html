@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Flexbox</title>
+        <style>
+            .flex-container{
+                display:flex;
+                align-content:space-between;
+                flex-wrap: wrap;
+                overflow: scroll;
+                height: 600px;
+                background-color:grey;
+            }
+            .flex-container>div{
+                background-color:rgb(185, 184, 184);
+                line-height: 80px;
+                margin: 20px;
+                text-align: center;
+                font-size: 40px;
+                width:100px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>The Align-content property</h1>
+        <p>The <span style="color:red;background-color: aliceblue;">align-content</span> property is used to align the flex items:</p>
+        <p>In these examples we use a 600 pixels high container, with the <span style="color:red;background-color: aliceblue;">flex-wrap</span> property set to <span style="color:red;background-color: aliceblue;">wrap</span>, to better demonstrate the <span style="color:red;background-color: aliceblue;">align-content</span> property.</p>
+
+        <p>The <span style="color:red;background-color: aliceblue;">space-between</span> value displays the flex lines with equal space between them:</p>
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+            <div>14</div>
+            <div>15</div>
+            <div>16</div>
+            <div>17</div>
+        </div>
+    </body>
+</html>
+       

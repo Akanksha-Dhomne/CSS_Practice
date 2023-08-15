@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS FlexBox</title>
+        <style>
+            .flex-container{
+                display: flex;
+                background-color: crimson;
+            }
+            .flex-container>div{
+                background-color: pink;
+                margin: 20px;
+                padding: 30px;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Flex Container</h1>
+        <h2>Parent Element (Container)</h2>
+        <p>Like we specified in the previous chapter, this is a flex <b>container</b> (the crimson area) with three flex <b>items</b>.</p>
+        <p>The flex container becomes flexible by setting the <span style="color: red; background-color: aliceblue;">display</span> property to <span style="color: red; background-color: aliceblue;">flex</span>:</p>
+
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+
+        <p>Then flex container properties are:</p>
+        <ul>
+            <li><span style="color:red;background-color: aliceblue;">flex-direction</span></li>
+            <li><span style="color:red;background-color: aliceblue;">flex-wrap</span></li>
+            <li><span style="color:red;background-color: aliceblue;">flex-flow</span></li>
+            <li><span style="color:red;background-color: aliceblue;">justify-content</span></li>
+            <li><span style="color:red;background-color: aliceblue;">align-items</span></li>
+            <li><span style="color:red;background-color: aliceblue;">align-content</span></li>
+        </ul>
+    </body>
+</html>
