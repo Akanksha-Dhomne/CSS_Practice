@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Flex-items</title>
+        <style>
+            .flex-container{
+                display: flex;
+                background-color: #f1f1f1;
+            }
+            .flex-container>div{
+                background-color: palevioletred;
+                color: white;
+                width: 100px;
+                margin: 10px;
+                text-align: center;
+                line-height: 75px;
+                font-size: 30px;
+            }
+            .flex-container1{
+                display: flex;
+                background-color: #f1f1f1;
+            }
+            .flex-container1>div{
+                background-color: blueviolet;
+                color:white;
+                margin: 20px;
+                width:100px;
+                line-height: 75px;
+                font-size: 30px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>The order Property</h1>
+        <p>The <span style="color:red;background-color: aliceblue;">order </span>property specifies the order of the flex items.</p>
+        <p>The first flex item in the code does not have to appear as the first item in the layout.</p>
+        <p>The order value must be a number, default value is 0.</p>
+        <p>Use the order property to sort the flex items as you like:</p>
+
+        <div class="flex-container">
+            <div style="order: 4">1</div>
+            <div style="order: 1">2</div>
+            <div style="order: 5">3</div>
+            <div style="order: 2">4</div>
+            <div style="order: 3">5</div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="flex-container1">
+            <div style="order: 4;">1</div>
+            <div style="order: 10;">2</div>
+            <div style="order: 5;">3</div>
+            <div style="order: 9;">4</div>
+            <div style="order: 11;">5</div>
+            <div style="order: 1;">6</div>
+            <div style="order: 6;">7</div>
+            <div style="order: 2;">8</div>
+            <div style="order: 8;">9</div>
+            <div style="order: 3;">10</div>
+            <div style="order: 7;">11</div>
+        </div>
+    </body>
+</html>

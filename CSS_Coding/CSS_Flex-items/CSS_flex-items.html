@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Flex-items</title>
+        <style>
+            .flex-container{
+                display: flex;
+                background-color: #f1f1f1;
+            }
+            .flex-container>div{
+                background-color: blue;
+                color: white;
+                width: 100px;
+                margin: 10px;
+                text-align: center;
+                line-height: 75px;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Flex Items</h1>
+        <h2>Child Elements (Items)</h2>
+        <p>The direct child elements of a flex container automatically becomes flexible (flex) items.</p>
+        <p>The element above represents four blue flex items inside a grey flex container.</p>
+
+        <h1>Flexible Items</h1>
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div> 
+            <div>4</div>
+        </div>
+
+        <p>The flex item properties are:</p>
+        <ul>
+            <li><span style="color:red;background-color:aliceblue;">order</span></li>
+            <li><span style="color:red;background-color:aliceblue;">flex-grow</span></li>
+            <li><span style="color:red;background-color:aliceblue;">flex-shrink</span></li>
+            <li><span style="color:red;background-color:aliceblue;">flex-basis</span></li>
+            <li><span style="color:red;background-color:aliceblue;">flex</span></li>
+            <li><span style="color:red;background-color:aliceblue;">flex-self</span></li>
+        </ul>
+    </body>
+</html>
