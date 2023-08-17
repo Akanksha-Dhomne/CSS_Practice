@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Position property</title>
+        <style>
+            /* for top left */
+            .container1 {
+                position: relative;
+            }
+            .topleft {
+                position: absolute;
+                top: 8px;
+                left: 16px;
+                font-size: 40px;
+            }
+            img{
+                width: 100%;
+                height: auto;
+                opacity: 0.3;
+            }
+
+            /* for top right */
+            .container2{
+                position: relative;
+            }
+            .topright{
+                position:absolute;
+                top:8px;
+                right:16px;
+                font-size: 40px;
+            }
+            img{
+                width:100%;
+                height:auto;
+                opacity: 0.3;
+            }
+
+            /* for bottom right */
+            .container3{
+                position: relative;
+            }
+            .bottomright{
+                position:absolute;
+                bottom:8px;
+                right:16px;
+                font-size: 40px;
+            }
+            img{
+                width:100%;
+                height:auto;
+                opacity: 0.3;
+            }
+
+            /* for bottom left */
+            .container4{
+                position: relative;
+            }
+            .bottomleft{
+                position:absolute;
+                bottom:8px;
+                left:16px;
+                font-size: 40px;
+            }
+            img{
+                width:100%;
+                height:auto;
+                opacity: 0.3;
+            }
+
+            /* for center */
+            .container5{
+                position: relative;
+            }
+            .center{
+                position: absolute;
+                top:50%;
+                width:100%;
+                text-align: center;
+                font-size: 40px;
+            }
+            img{
+                width:100%;
+                height:auto;
+                opacity: 0.3;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Layout - The position Property</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">position</span> property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky).</p>
+
+        <h2>Positioning Text In an Image</h2>
+        <p>How to position text over an image:</p>
+
+        <h2>Image Text</h2>
+        <p>Add some text to an image in the top left corner:</p>
+        <div class="container1">
+            <img src="../Images/switzerland.jpg" alt="img" width="700" height="400">
+            <div class="topleft">Top Left</div>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <h2>Image Text</h2>
+        <p>Add some text to an image in the top Right corner:</p>
+        <div class="container2">
+            <img src="../Images/switzerland.jpg" alt="img" width="700" height="400">
+            <div class="topright">Top Right</div>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <h2>Image Text</h2>
+        <p>Add some text to an image in the Bottom Right corner:</p>
+        <div class="container3">
+            <img src="../Images/switzerland.jpg" alt="img" width="700" height="400">
+            <div class="bottomright">Bottom Right</div>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <h2>Image Text</h2>
+        <p>Add some text to an image in the Bottom left corner:</p>
+        <div class="container4">
+            <img src="../Images/switzerland.jpg" alt="img" width="700" height="400">
+            <div class="bottomleft">Bottom left</div>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <h2>Image Text</h2>
+        <p>Add some text to an image in the center:</p>
+        <div class="container5">
+            <img src="../Images/switzerland.jpg" alt="img" width="700" height="400">
+            <div class="center">Centered</div>
+        </div>
+
+
+    </body>
+</html>
