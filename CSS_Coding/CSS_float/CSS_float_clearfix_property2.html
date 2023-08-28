@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Layout - float and clear</title>
+        <style>
+            div {
+                border: 3px solid slateblue;
+                padding: 5px;
+            }
+            .img1 {
+                float: right;
+            }
+            .img2 {
+                float: right;
+            }
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            .img3 {
+                float: left;
+            }
+            .img4 {
+                float: left;
+            }
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>The clearfix Hack</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">overflow: auto </span>
+           clearfix works well as long as you are able to keep control of your margins and 
+           padding (else you might see scrollbars). The<b> new, modern clearfix hack</b> 
+           however, is safer to use, and the following code is used for most webpages:
+        </p>
+        
+        <h1>For right side</h1>
+        <h2>Without Clearfix</h2>
+        <p>This image is floated to the right. It is also taller than the element 
+           containing it, so it overflows outside of its container:
+        </p>
+        <div>
+            <img class="img1" src="../Images/switzerland.jpg" alt="switzerland" width="170" height="170">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+        </div>
+
+        <h2 style="clear:right">With New Modern Clearfix</h2>
+        <p>Add the clearfix hack to the containing element, to fix this problem:</p>
+        <div class="clearfix">
+            <img class="img2" src="../Images/switzerland.jpg" alt="switzerland" width="170" height="170">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+        </div>
+
+        <h1>Foe left side</h1>
+        <h2>Without Clearfix</h2>
+        <p>This image is floated to the left. It is also taller than the element 
+           containing it, so it overflows outside of its container:
+        </p>
+        <div>
+            <img class="img3" src="../Images/switzerland.jpg" alt="switzerland" width="170" height="170">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+        </div>
+
+        <h2 style="clear:left">With New Modern Clearfix</h2>
+        <p>Add the clearfix hack to the containing element, to fix this problem:</p>
+        <div class="clearfix">
+            <img class="img4" src="../Images/switzerland.jpg" alt="switzerland" width="170" height="170">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+        </div>
+
+    </body>
+</html>
