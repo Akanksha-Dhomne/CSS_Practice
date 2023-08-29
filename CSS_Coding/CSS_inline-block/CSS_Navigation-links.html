@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Using inline-block to Create Navigation Links</title>
+        <style>
+            .links{
+                background-color: turquoise;
+                color: blue;
+                list-style-type: none;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+            }
+            .links li{
+                display: inline-block;
+                font-size: 20px;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Layout - display: inline-block</h1>
+        <h2>Using inline-block to Create Navigation Links</h2>
+        <p>One common use for <span style="color: red;background-color: aliceblue;">display: inline-block</span> is to<b> display list items horizontally instead of vertically</b>. The following example creates horizontal navigation links:</p>
+
+        <h1>Horizontal Navigation Links</h1>
+        <p>By default, list items are displayed vertically. In this example we use display: inline-block to display them horizontally (side by side).</p>
+        <p>Note: If you resize the browser window, the links will automatically break when it becomes too crowded.</p>
+
+        <ul class="links">
+            <li><a href="#">First Name</a></li>
+            <li><a href="#">Middle Name</a></li>
+            <li><a href="Last name">Last Name</a></li>
+            <li><a href="Address">Address</a></li>
+            <li><a href="#">Phone No.</a></li>
+        </ul>
+    </body>
+</html>
