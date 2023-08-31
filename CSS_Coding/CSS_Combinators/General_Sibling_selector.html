@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Combinators</title>
+        <style>
+            div  ~ p{
+               background-color: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Combinators</h1>
+        <h1 style="background-color: palegoldenrod;">General Sibling Selector (~)</h1>
+        <p>The general sibling selector selects all elements that are next siblings of a specified element.</p>
+        <p>The following example selects all <p> elements that are next siblings of <div> elements: </p>
+
+        <div>
+            <p>This is a paragraph</p>
+            <p>This is a paragraph</p>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is a paragraph outside the div element</p>
+        <div>
+            <p>This is a paragraph</p>
+            <section>This is a part of section</section>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is a paragraph outside the div element</p>
+        <p>This is a paragraph outside the div element</p>
+    </body>
+</html>    

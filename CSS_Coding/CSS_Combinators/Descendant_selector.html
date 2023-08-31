@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Combinators</title>
+        <style>
+            div p{
+               background-color: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Combinators</h1>
+        <h1 style="background-color: palegoldenrod;">Descendant Selector (Space)</h1>
+        <p>The descendant selector  matches all elements that are descendants of a specified element.</p>
+        <p>The following example selects all (p) elements inside (div) elements:</p>
+
+        <div>
+            <p>This is a paragraph 1</p>
+            <p>This is a paragraph 2</p>
+            <p>This is a paragraph 3</p>
+            <p>This is a paragraph 4</p>
+            <p>This is a paragraph 5</p>
+           <section>
+             <p>This is a paragraph 6</p>
+           </section>
+        </div>
+
+        <p>This is a paragraph 7</p>
+        <p>This is a paragraph 8</p>
+        <p>This is a paragraph 9</p>
+        <p>This is a paragraph 10</p>
+    </body>
+</html>

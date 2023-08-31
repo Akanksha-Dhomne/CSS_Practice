@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Combinators</title>
+        <style>
+            div  + p{
+               background-color: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Combinators</h1>
+        <h1 style="background-color: palegoldenrod;">Adjacent Sibling Selector (+)</h1>
+        <p>The adjacent sibling selector is used to select an element that is directly after another specific element.</p>
+        <p>Sibling elements must have the same parent element, and "adjacent" means "immediately following".</p>
+        <p>The following example selects the first <p> element that are placed immediately after <div> elements:</p>
+
+        <div>
+            <p>This is child of div element</p>
+            <p>This is child of div element</p>
+            <p>This is child of div element</p>
+        </div>
+        <p>THis is not a child of div element</p>
+        <p>THis is not a child of div element</p>
+        <p>THis is not a child of div element</p>
+        <div>
+            <p>This is child of div element</p>
+            <div>
+                <p>This is child of div element</p>
+            </div>
+            <p>This is child of div element</p>
+        </div>
+        <p>THis is not a child of div element</p>
+        <p>THis is not a child of div element</p>
+        <p>THis is not a child of div element</p>
+        <div>
+            <p>This is child of div element</p>
+            <p>This is child of div element</p>
+            <p>This is child of div element</p>
+        </div>
+        <p>THis is not a child of div element</p>
+        <p>THis is not a child of div element</p>
+        <p>THis is not a child of div element</p>
+    </body>
+</html>    
