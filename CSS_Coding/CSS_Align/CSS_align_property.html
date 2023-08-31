@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Layout - Horizontal & Vertical Align</title>
+        <style>
+            /* Center Align Elements */ /* Using marign auto*/
+            .center{
+                margin: auto;
+                width: 50%;                     /* width in % */
+                border: 5px solid royalblue;
+                padding: 20px;
+            }
+            .center1{
+                margin: auto;
+                width: 750px;                   /* width in pixels*/
+                border: 5px solid royalblue;
+                padding: 20px;
+            }
+            /* Center Align Text */
+            .center2{
+                text-align: center;
+                border: 5px solid red;
+            }
+
+            /* Left and Right Align - Using position */
+            .right1{
+                position: absolute;
+                right: 0;
+                width: 500px;
+                border: 5px solid green;
+                padding: 10px;
+            }
+            .left1{
+                position: absolute;
+                left: 0;
+                width: 500px;
+                border: 5px solid green;
+                padding: 10px;
+            }
+
+            /* Left and Right Align - Using float */
+            .right2{
+                float: right;
+                width: 500px;
+                border: 5px solid fuchsia;
+                padding: 10px;
+            }
+            .left2{
+                float: left;
+                width: 500px;
+                border: 5px solid fuchsia;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="background-color: aquamarine;">CSS Layout - Horizontal & Vertical Align</h1>
+        <h2>Center Align Elements</h2>
+        <p>To horizontally center a block element (like <div>), use <span style="color: red;background-color: aliceblue;">margin: auto;</span></p>
+        <p>The element will then take up the specified width, and the remaining space will be split equally between the two margins:</p>
+
+        <h1 style="background-color: aquamarine;">Center Align Elements</h1>
+        <p>To horizontally center a block element (like div), use margin: auto;</p>
+
+            <div class="center">
+                <p>This is a Cat.</p>
+            </div>
+            <p><b>Note:</b> Center aligning has no effect if the <span style="color: red;background-color: aliceblue;">width property</span> is not set (or set to 100%).</p>
+            <br<<br><br>
+            <div class="center1">
+                <p>This is a Cat.</p>
+            </div> 
+
+        <br><hr><br>
+
+        <h1 style="background-color: aquamarine;">Center Align Text</h1>
+        <p>To just center the text inside an element, use <span style="color: red;background-color: aliceblue;">text-align: center;</span></p>
+        
+            <h2>Center Text</h2>
+            <div class="center2">
+                <p>This is a Cat.</p>
+            </div>
+
+        <br><hr><br>
+
+        <h1 style="background-color:aquamarine;">Left and Right Align - Using position</h1>
+        <p>One method for aligning elements is to use <span style="color: red;background-color: aliceblue;">position: absolute;</span> :</p>
+
+            <h2>Right align with the position property</h2>
+            <p>An example of how to right align elements with the position property:</p>
+            <div class="right1">
+                <p>This is a Cat</p>
+            </div>
+            <br>
+            <br>
+            <h2>left align with the position property</h2>
+            <p>An example of how to left align elements with the position property:</p>
+            <div class="left1">
+                <p>This is a Cat</p>
+            </div>
+
+        <br><br><br><br><br><hr>
+
+        <h1 style="background-color: aquamarine;">Left and Right Align - Using float</h1>
+        <p>Another method for aligning elements is to use the <span style="color: red;background-color: aliceblue;">float</span> property.</p>
+            
+            <h2>Right align with the float property</h2>
+            <p>An example of how to right align elements with the float property:</p>
+                <div class="right2">
+                    <p>This is a Cat</p>
+                </div>
+            <br>
+            <br>
+            <h2>Left align with the float property</h2>
+            <p>An example of how to left align elements with the float property:</p>
+                <div class="left2">
+                    <p>This is a Cat</p>
+                </div>
+            
+    </body>
+</html>

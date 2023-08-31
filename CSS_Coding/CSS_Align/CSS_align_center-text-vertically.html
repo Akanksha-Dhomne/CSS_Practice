@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Layout - Horizontal & Vertical Align</title>
+        <style>
+            /* Center Vertically - Using padding */
+            .padding{
+                padding: 70px 0;
+                border: 3px solid red;
+            }
+            .padding2{
+                padding: 70px 0;
+                text-align: center;
+                border: 3px solid red;
+            }
+
+            /* Center Vertically - Using line-height */
+            .line-height{
+                line-height: 200px;
+                height: 200px;
+                border: 3px solid green;
+                text-align: center;
+            }
+            .line-height p{
+                line-height: 1.5;
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            /* Center Vertically - Using position & transform */
+            .pos-transform{
+                height: 200px;
+                position: relative;
+                border: 3px solid purple;
+            }
+            .pos-transform p{
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            /* Center Vertically - Using flexbox */
+            .flex{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 200px;
+                border: 3px solid fuchsia;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Layout - Horizontal & Vertical Align</h1>
+        
+        <h1 style="background-color: aquamarine;">Center Vertically - Using padding</h1>
+        <p>There are many ways to center an element vertically in CSS. A simple solution is to use top and bottom <span style="color: red;background-color: aliceblue;">padding:</span></p>
+            <div class="padding">
+                <p>This element is vertically centered.</p>
+            </div>
+        <p>To center both Vertically and horizontally, use <span style="color: red;background-color: aliceblue;">padding</span> and <span style="color: red;background-color: aliceblue;">text-align: center;</span></p>
+            <div class="padding2">
+                <p>This element is vertically centered.</p>
+            </div>
+
+        <br><hr><br>
+
+        <h1 style="background-color: aquamarine;">Center Vertically - Using line-height</h1>
+        <p>Another way is to use <span style="color: red;background-color: aliceblue;">line-height</span> property with a value that is equal to the <span style="color: red;background-color: aliceblue;">height</span> property.</p>
+            <div class="line-height">
+                <p>This element is vertically centered.</p>
+            </div>
+
+        <br><hr><br>
+
+        <h1 style="background-color: aquamarine;">Center Vertically - Using position & transform</h1>
+        <p>Another solution is to use positioning and the <span style="color: red;background-color: aliceblue;">transform</span> property.</p>
+            <div class="pos-transform">
+                <p>This element is vertically centered.</p>
+            </div>
+
+        <br><hr><br>
+
+        <h1 style="background-color: aquamarine;">Center Vertically - Using flexbox</h1>
+        <p>We can also use flexbox to center things.</p>
+            <div class="flex">
+                <p>This element is vertically centered.</p>
+            </div>
+    </body>
+</html>
