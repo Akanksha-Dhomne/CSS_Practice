@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Pseudo-classes</title>
+        <style>
+            p {
+                display: none;
+                background-color: pink;
+                border: 3px ridge darkblue;
+                padding: 20px;
+            }
+            div:hover p{
+                display: block;
+            }
+
+            article{
+                display: none;
+                background-color:peachpuff;
+                border: 3px solid brown;
+                padding: 20px;
+            }
+            section:hover article{
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Pseudo-classes</h1>
+        <h1 style="background-color: skyblue;">Simple Tooltip Hover</h1>
+        <p>Hover over a (div) element to show a (p) element (like a tooltip):</p>
+
+            <div>Hover over this div element to show the p element
+                <p class>Tada! Here I am!</p>
+            </div>
+   
+            <section> Hello!
+                <article>How are you?</article>
+            </section>
+    </body>
+</html>
