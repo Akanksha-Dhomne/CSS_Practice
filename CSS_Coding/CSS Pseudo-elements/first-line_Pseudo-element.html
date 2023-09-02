@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Pseudo-elements</title>
+        <style>
+            p::first-line{
+                color: crimson;
+                font-variant: small-caps;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;      
+                font-size: 20px;      
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Pseudo-elements</h1>
+        <h1 style="background-color: silver; text-decoration: underline;">The ::first-line Pseudo-element</h1>
+        <div>The <span style="color: red;background-color: aliceblue;">::first-line</span> pseudo-element is used to add a special style to the first line of a text.</div>
+        <div>The following example formats the first line of the text in all (p) elements:</div>
+
+        <p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+        <p>A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points.Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples or a single long illustration of a general point. It might describe a place, character, or process; narrate a series of events; compare or contrast two or more things; classify items into categories; or describe causes and effects. Regardless of the kind of information they contain, all paragraphs share certain characteristics. One of the most important of these is a topic sentence.</p>
+    
+        <div><b>Note:</b> The <span style="color: red;background-color: aliceblue;">::first-line</span> pseudo-element can only be applied to block-level elements.</div>
+        <div>The following properties apply to the <span style="color: red;background-color: aliceblue;">::first-line</span> pseudo-element:</div>
+        <ul>
+            <li>font properties</li>
+            <li>color properties</li> 
+            <li>background properties</li> 
+            <li>word-spacing</li> 
+            <li>word-spacing</li> 
+            <li>text-decoration</li>
+            <li>vertical-align</li>
+            <li>text-transform</li>
+            <li>line-height</li>
+            <li>clear</li>
+        </ul>
+        <div style="background-color: blanchedalmond;"><b>Notice the double colon notation</b> - <span style="color: red;background-color: aliceblue;">::first-line</span> versus  <span style="color: red;background-color: aliceblue;">:first-line</span><br>
+            The <b>double colon</b> replaced the <b>single-colon</b> notation for pseudo-elements in CSS3. <br>
+            This was an attempt from W3C to distinguish between pseudo-classes and pseudo-elements.<br>
+            The single-colon syntax was used for both pseudo-classes and pseudo-elements in CSS2 and CSS1.<br>
+            For backward compatibility, the single-colon syntax is acceptable for CSS2 and CSS1 pseudo-elements.<br>
+        </div>
+    </body>
+</html>

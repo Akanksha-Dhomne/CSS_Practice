@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Pseudo-elements</title>
+        <style>
+            p::first-letter{
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                color: crimson;
+                background-color: aliceblue;
+                margin: auto;
+                padding: 5px;
+                text-transform: capitalize;
+                font-size: xx-large;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Pseudo-elements</h1>
+        <h1 style="background-color: silver;text-decoration: underline;">The ::first-letter Pseudo-element</h1>
+        <div>The <span style="color: red;background-color: aliceblue;">::first-letter</span> pseudo-element is used to add a special style to the first letter of a text.</div>
+        <div>The following example formats the first letter of the text in all (p) elements: </div>
+
+        <p>You can use the ::first-letter pseudo-element to add a special effect to the first character of a text!</p>
+        <p>A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. </p>
+        <p>Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs.</p>
+        <p>This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points.</p>
+        <p>Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples or a single long illustration of a general point. It might describe a place, character, or process;</p>
+        <p>narrate a series of events; compare or contrast two or more things; classify items into categories; or describe causes and effects. Regardless of the kind of information they contain,</p>
+        <p>all paragraphs share certain characteristics. One of the most important of these is a topic sentence.</p>
+    
+        <div><b>Note:</b> The <span style="color: red;background-color: aliceblue;">::first-letter</span> pseudo-element can only be applied to block-level elements.</div>
+        <div>The following properties apply to the <span style="color: red;background-color: aliceblue;">::first-letter</span> pseudo-element:</div>
+        <ul>
+            <li>font properties</li>
+            <li>color properties</li> 
+            <li>background properties</li> 
+            <li>margin properties</li>
+            <li>padding properties</li>
+            <li>border properties</li>
+            <li>vertical-align (only if "float" is "none")</li>
+            <li>text-decoration</li>
+            <li>float</li>
+            <li>text-transform</li>
+            <li>line-height</li>
+            <li>clear</li>
+        </ul>
+    </body>
+</html>
