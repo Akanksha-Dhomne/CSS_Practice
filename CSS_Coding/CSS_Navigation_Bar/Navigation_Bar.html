@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Navigation Bar</title>
+        <style>
+            ol{
+                list-style-type:none;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Navigation Bar</h1>
+        <p>Having easy-to-use navigation is important for any web site.</p>
+        <p>With CSS you can transform boring HTML menus into good-looking navigation bars.</p>
+    
+        <h1 style="background-color: aquamarine;">Navigation Bar = List of Links</h1>
+        <p>A navigation bar needs standard HTML as a base.</p>
+        <p>In our examples we will build the navigation bar from a standard HTML list.</p>
+        <p>A navigation bar is basically a list of links, so using the (ul) and (li) elements makes perfect sense:</p>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#News">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <p>Note: We use href="#" for test links. In a real web site this would be URLs.</p>
+     
+        <br><hr><br>
+
+        <p style="color: forestgreen;">Now let's remove the bullets and the margins and padding from the list:</p>
+        <p>In this example, we remove the bullets from the list, and its default padding and margin.</p>
+        <ol>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#News">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ol>
+        <p>Example explained:</p>
+        <p><span style="color: red;background-color: aliceblue;">list-style-type: none;</span>  - Removes the bullets. A navigation bar does not need list markers</p>
+        <p>Set <span style="color: red;background-color: aliceblue;">margin:0;</span> and <span style="color: red;background-color: aliceblue;">padding:0;</span>  to remove browser default settings </p>
+        
+    </body>
+</html>
