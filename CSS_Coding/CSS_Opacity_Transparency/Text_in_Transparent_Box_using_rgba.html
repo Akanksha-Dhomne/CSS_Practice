@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Opacity / Transparency</title>
+        <style>
+            div.background{
+                background:url('../Images/roses.jpg');
+                border: 3px solid black;
+            }
+            div.transbox {
+                margin: 30px;
+                background-color:rgba(225, 225, 255, 0.2);
+                border: 2px solid black;
+            }
+            div.transbox p {
+                margin: 5%;
+                font-weight: bold;
+                color: #000000;
+            }
+
+            /* With RGBA 0.6 and hovering on it to see Transparency 100%*/ /*Extra*/
+            div.background2{
+                background:url('../Images/roses.jpg');
+                border: 3px solid black;
+            }
+            div.transbox2 {
+                margin: 30px;
+                background-color:rgba(225, 225, 255, 0.6);
+                border: 2px solid black;
+            }
+            div.transbox2:hover{
+                background-color: rgba(255, 255, 255,0.1);
+            }
+            div.transbox2 p {
+                margin: 5%;
+                font-weight: bold;
+                color: #000000;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Opacity / Transparency</h1>
+        <h1 style="background-color: blanchedalmond;">Text in Transparent Box using RGBA</h1>
+        <h2 style="color:salmon;">Using rgba color</h2>
+        <h3>With Opacity 0.2</h3>
+        <div class="background">
+            <div class="transbox">
+                <p>This is some text that is placed in the transparent box using RGBA. </p>
+            </div>
+        </div>
+
+        <br><hr><br>
+
+        <h3>With Opacity 0.6</h3>
+        <div class="background2">
+            <div class="transbox2">
+                <p>This is some text that is placed in the transparent box using RGBA. </p>
+            </div>
+        </div>
+    </body>
+</html> 

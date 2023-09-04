@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Opacity / Transparency</title>
+        <style>
+            div.background{
+                background:url('../Images/roses.jpg');
+                border: 3px solid black;
+            }
+            div.transbox {
+                margin: 30px;
+                background-color:#ffffff;
+                border: 2px solid black;
+                opacity: 0.6;
+            }
+            div.transbox p {
+                margin: 5%;
+                font-weight: bold;
+                color: #000000;
+            }
+
+            /* With Opacity 0.4 */ /*Extra*/
+            div.transbox2 {
+                margin: 30px;
+                background-color:#ffffff;
+                border: 2px solid black;
+                opacity: 0.4;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Opacity / Transparency</h1>
+        <h1 style="background-color: blanchedalmond;">Text in Transparent Box</h1>
+        <h2 style="color:salmon;">Using Opacity</h2>
+        <h3>With Opacity 0.6</h3>
+        <div class="background">
+            <div class="transbox">
+                <p>This is some text that is placed in the transparent box using opacity. </p>
+            </div>
+        </div>
+
+        <br><hr><br>
+
+        <h3>With Opacity 0.4</h3>
+        <div class="background">
+            <div class="transbox2">
+                <p>This is some text that is placed in the transparent box using opacity. </p>
+            </div>
+        </div>
+    </body>
+</html>
