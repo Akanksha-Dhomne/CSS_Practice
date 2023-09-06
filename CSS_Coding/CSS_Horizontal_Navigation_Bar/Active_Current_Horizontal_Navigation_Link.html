@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Navigation Bar</title>
+        <style>
+            ul{
+                list-style-type:none;
+                margin: 0;
+                padding: 0;
+                font-size: 30px;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-weight: 300;
+                overflow: hidden;
+                background-color: #2f2b2b;
+            }
+            li {
+               float: left;
+            }
+            li a{
+                display: block;
+                color:white;
+                padding: 16px 20px;
+                text-decoration: none;
+                text-align: center;
+            }
+            .active{
+                background-color:#04AA6D ;
+            }
+            li a:hover:not(.active){
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Navigation Bar</h1>
+        <h1 style="background-color: aquamarine;">CSS Horizontal Navigation Bar using Floating List Items</h1>
+        <h2 style="color:red;">Active/Current Navigation Link</h2>
+        <p>Add an <q>active</q> class to the current link to let the user know which page he OR she is on:</p>
+       
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </body>
+</html>    

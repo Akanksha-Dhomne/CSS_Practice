@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Navigation Bar</title>
+        <style>
+            ul{
+                list-style-type:none;
+                margin: 0;
+                padding: 0;
+                background-color: #4e4646;
+                font-size: 30px;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-weight: 300;
+                overflow: hidden;
+            }
+            li {
+                float: left;
+            }
+            li a{
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            li a:hover:not(.active) {
+                background-color: #111;
+            }
+            .active {
+                background-color: #04AA6D;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Navigation Bar</h1>
+        <h1 style="background-color: aquamarine;">CSS Horizontal Navigation Bar Examples</h1>
+        <p>Right-align links by floating the list items to the right <span style="color: red;background-color:aliceblue;">(float:right;):</span></p>
+        <h2 style="color:red;">Right-Align Links</h2>
+        
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li style="float: right;"><a class="active" href="#about">About</a></li>
+        </ul>
+    </body>
+</html>    
