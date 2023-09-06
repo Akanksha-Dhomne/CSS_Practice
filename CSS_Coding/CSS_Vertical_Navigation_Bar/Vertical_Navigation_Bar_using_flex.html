@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vertical Navigation Bar using flex</title>
+    <style>
+      .flex {
+        display: flex;
+        flex-direction: column;
+      }
+      div {
+        background-color: #f1f1f1;
+        margin: 0;
+        padding: 0;
+        width: 300px;
+        font-size: 25px;
+        text-align: center;
+        border: 1px solid black;
+      }
+      .active {
+        background-color: #04aa6d;
+      }
+      div:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="background-color:pink;">Vertical Navigation Bar using flex</h1>
+    <div class="flex">
+      <div class="active">Home</div>
+      <div>News</div>
+      <div>Contact</div>
+      <div>About</div>
+    </div>
+  </body>
+</html>

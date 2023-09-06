@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Navigation Bar</title>
+        <style>
+            ul{
+                list-style-type:none;
+                margin: 0;
+                padding: 0;
+                width: 300px;
+                background-color: #dddddd;
+                font-size: 30px;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-weight: 300;
+                text-transform: uppercase;
+                border: 3px solid blue;
+            }
+            li a{
+                display: block;
+                padding: 10px 20px;
+                text-decoration: none;
+                color: #000;
+            }
+            li{
+                text-align: center;
+                border-bottom: 3px solid red;
+            }
+            li:last-child {
+                border-bottom: none;
+            }
+            li a.active{
+                background-color: #04aa6d;
+                color: white;
+            }
+            li a:hover:not(.active){
+                background-color: #555;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Navigation Bar</h1>
+        <h1 style="background-color: aquamarine;">Center Links & Add Borders</h1>
+        <p>Add <span style="color: red;background-color:aliceblue;">text-align:center</span> to (li) or (a) to center the links.</p>
+        <p>Add the <span style="color: red;background-color:aliceblue;">border </span>property to (ul) add a border around the navbar. If you also want borders inside the navbar, add a <span style="color: red;background-color:aliceblue;">border-bottom </span>to all (li) elements, except for the last one:</p>
+        <p>In this example, we center the navigation links and add a border to the navigation bar.</p>
+        
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+
+    </body>
+</html>    
