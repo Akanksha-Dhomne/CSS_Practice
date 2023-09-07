@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Counters</title>
+        <style>
+            body{
+                counter-reset: section;
+            }
+            h1{
+                counter-reset: subsection;
+            }
+            h1::before{
+                counter-increment: section;
+                content: "Section" counter(section) ".  ";
+                color: slateblue;
+            }
+            h2::before{
+                counter-increment: subsection;
+                content: counter(section) "." counter(subsection) " ";
+                color: rgb(231, 31, 98);
+            }
+        </style>
+    </head>
+    <body>
+        <div style="font-size: 30px;">CSS Counters</div>
+        <div style="font-size: 30px;background-color: bisque;">Nesting Counters</div>
+        <p>The following example creates one counter for the page (section) and one counter for each (h1) element (subsection). The "section" counter will be counted for each (h1) element with "Section (value of the section counter).", and the "subsection" counter will be counted for each (h2) element with "(value of the section counter).(value of the subsection counter)":</p>
+
+        <h1>HTML Tutorial</h1>
+        <h2>HTML Basic Examples</h2>
+        <h2>HTML Elements</h2>
+        <h2>HTML Attributes</h2>
+        <h2>HTML Headings</h2>
+        <h2>HTML Paragraphs</h2>
+        <h2>HTML Styles</h2>
+
+        <h1>CSS Tutorial</h1>
+        <h2>CSS Comments</h2>
+        <h2>CSS Colors</h2>
+        <h2>CSS Backgrounds</h2>
+        <h2>CSS Borders</h2>
+        <h2>CSS Margins</h2>
+        <h2>CSS Padding</h2>
+
+        <h1>JavaScript Tutorial</h1>
+        <h2>JavaScript Syntax</h2>
+        <h2>JavaScript Comments</h2>
+        <h2>JavaScript Variables</h2>
+        <h2>JavaScript Let</h2>
+        <h2>JavaScript Const</h2>
+        <h2>JavaScript Operators</h2>
+
+        <h1>SQL Tutorial</h1>
+        <h2>SQL SELECT DISTINCT Statement</h2>
+        <h2>SQL WHERE Clause</h2>
+        <h2>SQL ORDER BY Keyword</h2>
+        <h2>SQL AND Operator</h2>
+        <h2>SQL OR Operator</h2>
+        <h2>SQL NOT Operator</h2>
+
+        <h1>Python Tutorial</h1>
+        <h2>Python Comments</h2>
+        <h2>Python Variables</h2>
+        <h2>Python - Variable Names</h2>
+        <h2>Python Variables - Assign Multiple Values</h2>
+        <h2>Python - Output Variables</h2>
+        <h2>Python - Global Variables</h2>
+
+        <p>A counter can also be useful to make outlined lists because a new instance of a counter is automatically created in child elements. Here we use the counters() function to insert a string between different levels of nested counters:</p>
+    </body>
+</html>

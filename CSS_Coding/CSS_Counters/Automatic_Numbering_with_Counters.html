@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Counters</title>
+        <style>
+            body{
+                counter-reset: akanksha;
+            }
+            h2::before{
+                counter-increment: akanksha;
+                content: "Section" counter(akanksha) " : ";
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Counters</h1>
+        <p>CSS counters are "variables" maintained by CSS whose values can be incremented by CSS rules (to track how many times they are used). Counters let you adjust the appearance of content based on its placement in the document.</p>
+        <h1 style="background-color: bisque;">Automatic Numbering With Counters</h1>
+        <p>CSS counters are like "variables". The variable values can be incremented by CSS rules (which will track how many times they are used).</p>
+        <p>To work with CSS counters we will use the following properties:</p>
+
+        <ul>
+            <li><span style="color: red;background-color: aliceblue;">counter-reset</span> -Creates or resets a counter</li>
+            <li><span style="color: red;background-color: aliceblue;">counter-increment</span> - Increments a counter value</li>
+            <li><span style="color: red;background-color: aliceblue;">content</span> - Inserts generated content</li>
+            <li><span style="color: red;background-color: aliceblue;">counter()</span> or <span style="color: red;background-color: aliceblue;">counters()</span>  function - Adds the value of a counter to an element</li>
+        </ul>
+
+        <p>To use a CSS counter, it must first be created with <span style="color: red;background-color: aliceblue;">counter()</span> or <span style="color: red;background-color: aliceblue;">counter-reset</span></p>
+        <p>The following example creates a counter for the page (in the body selector), then increments the counter value for each (h2) element and adds "Section (value of the counter):" to the beginning of each (h2) element:</p>
+    
+        <h1>Using CSS Counters</h1>
+        <h2>HTML Tutorial</h2>
+        <h2>CSS Tutorial</h2>
+        <h2>JavaScript Tutorial</h2>
+        <h2>Python Tutorial</h2>
+        <h2>SQL Tutorial</h2>
+        <h2>C# Tutorial</h2>
+        <h2>PHP Tutorial</h2>
+        <h2>C Language Tutorial</h2>
+        <h2>MYSQL Tutorial</h2>
+    </body>
+</html>

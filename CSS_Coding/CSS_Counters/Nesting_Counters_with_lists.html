@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Counters</title>
+        <style>
+            ol{
+                counter-reset: section;
+                list-style-type: none;
+            }
+        
+            li::before{
+                counter-increment: section;
+                content: counters(section," . ") "  ";
+                color: red;
+                font-weight: 700;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="font-size: 30px;">CSS Counters</div>
+        <div style="font-size: 30px;background-color: bisque;">Nesting Counters</div>
+        <p>The following example creates one counter for the page (section) and one counter for each (h1) element (subsection). The "section" counter will be counted for each (h1) element with "Section (value of the section counter).", and the "subsection" counter will be counted for each (h2) element with "(value of the section counter).(value of the subsection counter)":</p>
+
+        <ol>
+            <li>HTML 1</li>
+            <li>Basic 2
+            <ol>
+                <li>CSS 3</li>
+                <li>Comments 4</li>
+                <li>Colors 5
+                <ol>
+                    <li>JavaScript 6</li>
+                    <li>Syntax 6</li>
+                    <li>Comments 8</li>
+                </ol>   
+                </li>
+                <li>Pytho Tutorial 9</li>
+            </ol>
+            </li>
+            <li>Comments 10</li>
+            <li>Variables 11</li>
+            <li>Variable 12</li>
+            </ol>
+
+            <ol>
+                <li>Assign 13</li>
+                <li>Output 14</li>
+                <li>Global 15</li>
+            </ol>
+
+            <ol>
+                <li>Assign 16</li>
+                <li>Output 17</li>
+                <li>Global 18</li>
+            </ol>
+    </body>
+</html>
