@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Attribute Selectors</title>
+        <style>
+            [class|="top"] {
+                background-color: yellowgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="background-color: antiquewhite;">CSS Attribute Selectors</h1>
+        <h1 style="background-color: grey;">CSS [attribute|="value"] Selector</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">[attribute|="value"] </span>selector is used to select elements with a attribute value, whose value can be exactly the specified value, or the specified value followed by a hyphen (-). </p>
+        <p><b>Note: </b> The value has to be a whole word, either alone, like class="top", or followed by a hyphen( - ), like class="top-text".</p>
+        
+        <h2>CSS [attribute|="value"] Selector</h2>
+
+        <h1 class="top-heading">Welcome to my space</h1>
+        <p class="top-para">This is a paragraph</p>
+        <p class="topcontent">We are learning CSS</p>
+        <p class="top next content">This is a concept to attribute selector</p>
+    </body>
+</html>

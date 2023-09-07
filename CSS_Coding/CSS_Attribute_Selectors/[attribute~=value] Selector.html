@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Attribute Selectors</title>
+        <style>
+           [title~="flower"]{
+            border: 5px solid black;
+           }
+        </style>
+    </head>
+    <body>
+        <h1 style="background-color: antiquewhite;">CSS Attribute Selectors</h1>
+        <h1 style="background-color: grey;">CSS [attribute~="value"] Selector</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">[attribute~="value"] </span>selector is used to select elements with a attribute value containing a specified word. </p>
+        <p>The following example selects all elements with a title attribute that contains a space-separated list of words, one of which is "flower":</p>
+
+        <h2>CSS [attribute~="value"] Selector</h2>
+        <p>All images with the title attribute <b>containing the word <i><span style="color: red;">"flower"</span></i> get a yellow border</b>.</p>
+
+        <img src="../Images/flower.jpg" title="flower" width="150" height="150">&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="../Images/klematis.jpg" title="klematis" width="150" height="150">&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="../Images/roses.jpg" title="rose flower" width="150" height="150">&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="../Images/pink flower.jpg" title="pink flower" width="150" height="150">&nbsp;&nbsp;&nbsp;&nbsp;
+    </body>
+</html>

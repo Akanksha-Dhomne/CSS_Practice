@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Attribute Selectors</title>
+        <style>
+            a[target="_blank"] {
+                background-color: yellowgreen;
+                font-size: 20px;
+                color: black;
+            }
+
+            a[target="_self"] {
+                background-color: pink;
+                font-size: 20px;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="background-color: antiquewhite;">CSS Attribute Selectors</h1>
+        <h1 style="background-color: grey;">CSS [attribute="value"] Selector</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">[attribute="value"] </span>selector is used to select elements with a specified attribute and value. </p>
+        <p>he following example selects all (a) elements with a <b>target="_blank"</b> attribute:</p>
+
+        <h2>CSS [attribute="value"] Selector</h2>
+        <p>The link with target="_blank" gets a yellowgreen background:</p>
+
+        <a href="https://www.google.com">Visit Google</a>
+        <a href="https://www.canva.com">Visit Canva</a>
+        <a href="https://www.twitter.com" target="_top">Visit Twitter</a>
+        <a href="https://www.disney.com" target="_self">Visit Disney</a>
+        <a href="https://www.instagram.com" target="_blank">Visit Instagram</a>
+        <a href="https://www.facebook.com" target="_parent">Visit Facebook</a>
+    </body>
+</html>

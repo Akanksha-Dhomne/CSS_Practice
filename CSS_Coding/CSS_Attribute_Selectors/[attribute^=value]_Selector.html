@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Attribute Selectors</title>
+        <style>
+            [class^="top"] {
+                background-color: yellowgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="background-color: antiquewhite;">CSS Attribute Selectors</h1>
+        <h1 style="background-color: grey;">CSS [attribute^="value"] Selector</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">[attribute^="value"] </span>selector is used to select elements with the specified attribute, whose value starts with the specified value. </p>
+        <p>The following example selects all elements with a class attribute value that starts with "top":</p>
+        <p><b>Note: </b> The value does not have to be a whole word!</p>
+        
+        <h2>CSS [attribute^="value"] Selector</h2>
+
+        <h1 class="top-heading">Welcome to my space</h1>
+        <p class="top-para">This is a paragraph</p>
+        <p class="topcontent">We are learning CSS</p>
+        <p class="top next content">This is a concept to attribute selector</p>
+        <p class="highlight">This is CSS [attribute^="value"] Selector</p>
+    </body>
+</html>
