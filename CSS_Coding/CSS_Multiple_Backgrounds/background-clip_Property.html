@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Multiple Backgrounds</title>
+        <style>
+            #example1{
+                border: 10px dotted black;
+                background: salmon;
+                padding: 50px;
+            }
+
+            #example2{
+                border: 10px dotted black;
+                background:salmon;
+                padding: 50px;
+                background-clip: padding-box;
+            }
+
+            #example3{
+                border: 10px dotted black;
+                background:salmon ;
+                padding: 50px;
+                background-clip: content-box;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Multiple Backgrounds</h1>
+        <h1 style="background-color:skyblue;">CSS background-clip Property</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">background-clip </span> property specifies the painting area of the background.</p>
+        <p>The property takes three different values:</p>
+        <ul>
+            <li>border-box - (default) the background is painted to the outside edge of the border</li>
+            <li>padding-box - the background is painted to the outside edge of the padding</li>
+            <li>content-box - the background is painted within the content box</li>
+        </ul>
+        <p>The following example illustrates the <span style="color: red;background-color: aliceblue;">background-clip </span>property:</p>
+       
+        <p>No background-clip (border-box is default):</p>
+        <div id="example1">
+            <h1>Lorem Ipsum Dolor</h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        
+        <p>background-clip: padding-box:</p>
+        <div id="example2">
+            <h1>Lorem Ipsum Dolor</h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+
+        <p>background-clip: content-box:</p>
+        <div id="example3">
+            <h1>Lorem Ipsum Dolor</h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </body>
+</html>

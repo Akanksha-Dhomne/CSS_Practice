@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Multiple Backgrounds</title>
+        <style>
+            #example1{
+                border: 10px solid black;
+                background: url('../Images/butterflies.png') ;
+                padding: 50px;
+                background-repeat: no-repeat;
+            }
+
+            #example2{
+                border: 10px solid black;
+                background: url('../Images/butterflies.png') ;
+                padding: 50px;
+                background-repeat: no-repeat;
+                background-origin: border-box;
+            }
+
+            #example3{
+                border: 10px solid black;
+                background: url('../Images/butterflies.png') ;
+                padding: 50px;
+                background-repeat: no-repeat;
+                background-origin: content-box;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Multiple Backgrounds</h1>
+        <h1 style="background-color:skyblue;">CSS background-origin Property</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">background-origin </span> property specifies where the background image is positioned.</p>
+        <p>The property takes three different values:</p>
+        <ul>
+            <li>border-box - the background image starts from the upper left corner of the border</li>
+            <li>padding-box - (default) the background image starts from the upper left corner of the padding edge</li>
+            <li>content-box - the background image starts from the upper left corner of the content</li>
+        </ul>
+        <p>The following example illustrates the <span style="color: red;background-color: aliceblue;">background-origin </span>property:</p>
+       
+        <p>No background-origin (padding-box is default):</p>
+        <div id="example1">
+            <h1>Lorem Ipsum Dolor</h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        
+        <p>background-origin: border-box:</p>
+        <div id="example2">
+            <h1>Lorem Ipsum Dolor</h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+
+        <p>background-origin: content-box:</p>
+        <div id="example3">
+            <h1>Lorem Ipsum Dolor</h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </body>
+</html>

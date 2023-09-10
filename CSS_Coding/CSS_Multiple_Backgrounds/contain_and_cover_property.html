@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Multiple Backgrounds</title>
+        <style>
+            .div1{
+                border: 1px solid black;
+                height:200px;
+                width: 300px;
+                background:url('../Images/sunflower.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            .div2{
+                border: 1px solid black;
+                height:200px;
+                width: 300px;
+                background:url('../Images/sunflower.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .div3{
+                border: 1px solid black;
+                height:200px;
+                width: 300px;
+                background:url('../Images/sunflower.png');
+                background-repeat: no-repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Multiple Backgrounds</h1>
+        <h1 style="background-color:skyblue;">CSS Background Size</h1>
+        <p>The two other possible values for <span style="color: red;background-color: aliceblue;">background-size</span> are <span style="color: red;background-color: aliceblue;">contain</span> and <span style="color: red;background-color: aliceblue;">cover</span></p>
+        <p>The <span style="color: red;background-color: aliceblue;">contain </span>keyword scales the background image to be as large as possible (but both its width and its height must fit inside the content area). As such, depending on the proportions of the background image and the background positioning area, there may be some areas of the background which are not covered by the background image.</p>
+        <p>The <span style="color: red;background-color: aliceblue;">cover </span>keyword scales the background image so that the content area is completely covered by the background image (both its width and height are equal to or exceed the content area). As such, some parts of the background image may not be visible in the background positioning area.</p>
+        <p>The following example illustrates the use of <span style="color: red;background-color: aliceblue;">background-size</span> <span style="color: red;background-color: aliceblue;">contain</span> and <span style="color: red;background-color: aliceblue;">cover</span>:</p>
+       
+        <h1>The background-size Property</h1>
+
+        <h2>background-size: contain:</h2>
+        <div class="div1">
+        <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <h2>background-size: cover:</h2>
+        <div class="div2">
+        <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <h2>No background-size defined:</h2>
+        <div class="div3">
+        <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <h2>Original image:</h2>
+        <img src="../Images/sunflower.png" alt="Flowers" width="224" height="162">
+        
+    </body>
+</html>

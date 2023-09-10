@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Multiple Backgrounds</title>
+        <style>
+            #example{
+                background: url('../Images/butterflies.png') left top no-repeat, url('../Images/sunflower.png') right bottom no-repeat, url('../Images/paper.jpg') left top repeat;
+                padding: 15px;
+                background-size: 50px, 130px, auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Multiple Backgrounds</h1>
+        <h1 style="background-color:skyblue;">Define Sizes of Multiple Background Images</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">background-size </span> property also accepts multiple values for background size (using a comma-separated list), when working with multiple backgrounds.</p>
+        <p>The following example has three background images specified, with different background-size value for each image:</p>
+       
+        <div id="example">
+            <h1>Lorem Ipsum Dolor</h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </body>
+</html>

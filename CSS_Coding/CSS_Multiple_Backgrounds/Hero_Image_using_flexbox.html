@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Multiple Backgrounds</title>
+        <style>
+            body{
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .hero-image{
+                background: url('../Images/forest.jpg') no-repeat center;
+                background-size: cover;
+                height: 900px;
+                width: 100%;
+            }
+            .hero-text{
+                text-align: center;
+                /* transform: translate(-50%,-50%); */
+                color: white;
+            }
+            .container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            button{
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Multiple Backgrounds</h1>
+        <h1 style="background-color:skyblue;">Hero Image using Flexbox</h1>
+        <p>You could also use different background properties on a (div) to create a hero image (a large image with text), and place it where you want.</p>
+        
+        <div class="container hero-image" >
+            <div class="hero-text">
+                <h1 style="font-size: 80px;">I am John Doe</h1>
+                <h1>And I'm a Photographer</h1>
+                <button>Hire me</button>
+            </div>
+        </div>
+    </body>
+</html>
