@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Gradients</title>
+        <style>
+            #gradient1{
+                height: 150px;
+                width: 200px;
+                background-color: red; /* For browsers that do not support gradients */
+                background-image: radial-gradient(red,yellow,green);      
+            }
+            #gradient2{
+                height: 150px;
+                width: 200px;
+                background-color: red; /* For browsers that do not support gradients */
+                background-image: radial-gradient(circle, red, yellow, green);   
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Gradients</h1>
+        <h1 style="background-color: silver;">Set Shape</h1>
+        <p>The shape parameter defines the shape. It can take the value circle or ellipse. The default value is ellipse.</p>
+        <p>The following example shows a radial gradient with the shape of a circle:</p>
+       
+        <h1>Radial Gradient - Shapes</h1>
+
+        <h2>Ellipse (this is default):</h2>
+        <div id="gradient1"></div>
+        
+        <h2><strong>Circle:</strong></h2>
+        <div id="gradient2"></div>
+
+    </body>
+</html>

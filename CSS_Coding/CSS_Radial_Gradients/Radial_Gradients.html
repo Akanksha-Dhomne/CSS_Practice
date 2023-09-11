@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Gradients</title>
+        <style>
+            /* Radial Gradient - Evenly Spaced Color Stops (this is default) */
+            #gradient1{
+                height: 150px;
+                width: 200px;
+                background-color: red; /* For browsers that do not support gradients */
+                background-image: radial-gradient(red,yellow,green);      
+            }
+            #gradient2{
+                height: 150px;
+                width: 200px;
+                background-color: red; /* For browsers that do not support gradients */
+                background-image: radial-gradient(purple,yellow,green,blue);   
+            }
+
+            /* Radial Gradient - Differently Spaced Color Stops */
+            #grad1{
+                height: 150px;
+                width: 200px;
+                background-color: red;  /* For browsers that do not support gradients */
+                background-image: radial-gradient(red 8%, green 15%, yellow 60%); 
+            }
+            #grad2{
+                height: 150px;
+                width: 200px;
+                background-color: red;  /* For browsers that do not support gradients */
+                background-image: radial-gradient(blue 3%, purple 40%,green 70%);  
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Gradients</h1>
+        <h1 style="background-color: silver;">CSS Radial Gradients</h1>
+        <p>A radial gradient is defined by its center.</p>
+        <p>To create a radial gradient you must also define at least two color stops.</p>
+       
+        <h2>syntax</h2>
+        <p style="border: 1px solid black; padding: 10px; color:red"><b>background-image: radial-gradient(shape size at position, start-color, ..., last-color);</b></p>
+        <p>By default, shape is ellipse, size is farthest-corner, and position is center.</p>
+        
+        <h2 style="background-color: rgb(98, 198, 198);">Radial Gradient - Evenly Spaced Color Stops (this is default)</h2>
+        <p>The following example shows a radial gradient with evenly spaced color stops:</p>
+    
+        <div id="gradient1"></div>
+        <br>
+        <div id="gradient2"></div>
+
+        <br><hr><hr><br>
+
+        <h2 style="background-color: rgb(98, 198, 198);">Radial Gradient - Differently Spaced Color Stops</h2>
+        <p>The following example shows a radial gradient with differently spaced color stops:</p>
+
+        <div id="grad1"></div>
+        <br>
+        <div id="grad2"></div>
+    </body>
+</html>

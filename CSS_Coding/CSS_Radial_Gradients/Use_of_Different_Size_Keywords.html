@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Gradients</title>
+    <style>
+      #grad1 {
+        height: 150px;
+        width: 200px;
+        background-color: red; /* For browsers that do not support gradients */
+        background-image: radial-gradient(closest-side at 40% 70%, red, yellow, black);
+      }
+      #grad2 {
+        height: 150px;
+        width: 200px;
+        background-color: red; /* For browsers that do not support gradients */
+        background-image: radial-gradient(farthest-side at 40% 70%, red, yellow, black);
+      }
+      #grad3 {
+        height: 150px;
+        width: 200px;
+        background-color: red; /* For browsers that do not support gradients */
+        background-image: radial-gradient(closest-corner at 40% 70%, red, yellow, black);
+      }
+      #grad4 {
+        height: 150px;
+        width: 200px;
+        background-color: red; /* For browsers that do not support gradients */
+        background-image: radial-gradient(farthest-corner at 40% 70%, red, yellow, black);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Gradients</h1>
+    <h1 style="background-color: silver">Use of Different Size Keywords</h1>
+    <p>
+      The size parameter defines the size of the gradient. It can take four
+      values:
+    </p>
+
+    <ul>
+      <li><b>closest-side</b></li>
+      <li><b>farthest-side</b></li>
+      <li><b>closest-corner</b></li>
+      <li><b>farthest-corner</b></li>
+    </ul>
+
+    <h1>Radial Gradients - Different size keywords</h1>
+
+    <h2>Ellipse (this is default):</h2>
+
+    <h2>closest-side:</h2>
+    <div id="grad1"></div>
+
+    <h2>farthest-side:</h2>
+    <div id="grad2"></div>
+
+    <h2>closest-corner:</h2>
+    <div id="grad3"></div>
+
+    <h2>farthest-corner (default):</h2>
+    <div id="grad4"></div>
+  </body>
+</html>

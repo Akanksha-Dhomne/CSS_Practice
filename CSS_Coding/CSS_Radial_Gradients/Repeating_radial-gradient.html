@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Gradients</title>
+    <style>
+      #grad1 {
+        height: 150px;
+        width: 200px;
+        background-color: red; /* For browsers that do not support gradients */
+        background-image: repeating-radial-gradient(red, yellow 15%, black 15%);
+      }
+      #grad2 {
+        height: 150px;
+        width: 200px;
+        background-color: red; /* For browsers that do not support gradients */
+        background-image: repeating-radial-gradient(red, yellow 10%, black 15%);
+      }
+      #grad3 {
+        height: 150px;
+        width: 200px;
+        background-color: red; /* For browsers that do not support gradients */
+        background-image: repeating-radial-gradient(red 10%, yellow, black 20%);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Gradients</h1>
+    <h1 style="background-color: silver">Repeating a radial-gradient</h1>
+    <p>The repeating-radial-gradient() function is used to repeat radial gradients:</p>
+
+    <div id="grad1"></div>
+    <br>
+    <div id="grad2"></div>
+    <br>
+    <div id="grad3"></div>
+  </body>
+</html>
