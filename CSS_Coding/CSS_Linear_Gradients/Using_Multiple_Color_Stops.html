@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Gradients</title>
+        <style>
+            #grad1{
+                height:200px;
+                background-color: red;  /* For browsers that do not support gradients */
+                background-image: linear-gradient(orange, white, green);
+            }
+            #grad2{
+                height: 200px;
+                background-color: red;   /* For browsers that do not support gradients */
+                background-image: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+            }   
+            #grad3{
+                height: 200px;
+                background-color: red;    /* For browsers that do not support gradients */
+                background-image: linear-gradient(red 30%, green 70%, yellow 50%, blue 50%);
+            }
+
+            #gradient{
+                height: 60px;
+                background-color: red;   /* For browsers that do not support gradients */
+                background-image:linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="background-color: silver;">CSS Gradients</h1>
+        <h2 style="background-color: pink;">Using Multiple Color Stops</h2>
+        <p>The following example shows a linear gradient (from top to bottom) with multiple color stops:</p>
+        
+        <h1>Linear Gradients - Multiple Color Stops</h1>
+        <p><strong>Note:</strong> Color stops are spaced evenly when no percents are specified.</p>
+    
+        <h2>3 Color Stops (evenly spaced):</h2>
+        <div id="grad1"></div>
+
+        <h2>7 Color Stops (evenly spaced):</h2>
+        <div id="grad2"></div>
+
+        <h2>4 Color Stops (not evenly spaced):</h2>
+        <div id="grad3"></div>
+
+        <p>The following example shows how to create a linear gradient (from left to right) with the color of the rainbow and some text:</p>
+        
+        <div id="gradient" style="text-align: center; margin: auto; color: #888888; font-size:40px; font-weight: bold;">Rainbow background</div>
+    </body>
+</html>

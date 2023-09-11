@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Gradients</title>
+        <style>
+            /* Linear Gradient - Top to Bottom */
+            #gradient1{
+                height: 200px;
+                background-color: red; /* For browsers that do not support gradients */
+                background-image: linear-gradient(red,yellow);      /* top to bottom */
+            }
+            #gradient2{
+                height: 200px;
+                background-color: red; /* For browsers that do not support gradients */
+                background-image: linear-gradient(to bottom, green,blue);   /*bottom to top */
+            }
+
+            /* Direction - Left to Right */
+            #grad1{
+                height: 200px;
+                background-color: red;  /* For browsers that do not support gradients */
+                background-image: linear-gradient(to right, red, yellow);  /* left to right */
+            }
+            #grad2{
+                height: 200px;
+                background-color: red;
+                background-image: linear-gradient(to left, blue, green);  /* right to left */
+            }
+
+            /* Direction - Diagonal */
+            #diagonal1{
+                height: 200px;
+                background-color: red;   /* For browsers that do not support gradients */
+                background-image: linear-gradient(to bottom right, red, yellow);
+            }
+            #diagonal2{
+                height: 200px;
+                background-color: red;   /* For browsers that do not support gradients */
+                background-image: linear-gradient(to bottom left, blue, green);
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>CSS Gradients</h1>
+        <h1 style="background-color: silver;">CSS Linear Gradients</h1>
+        <p>To create a linear gradient you must define at least two color stops. Color stops are the colors you want to render smooth transitions among. You can also set a starting point and a direction (or an angle) along with the gradient effect.</p>
+       
+        <h2>syntax</h2>
+        <p style="border: 1px solid black; padding: 10px; color:red"><b>background-image: linear-gradient(direction, color-stop1, color-stop2, ...);</b></p>
+    
+        <h2 style="background-color: rgb(98, 198, 198);">Direction - Top to Bottom (this is default)</h2>
+        <p>The following example shows a linear gradient that starts at the top. It starts red, transitioning to yellow:</p>
+        <h1>Linear Gradient - Top to Bottom</h1>
+        <p>This linear gradient starts red at the top, transitioning to yellow at the bottom:</p>
+    
+        <div id="gradient1"></div>
+        <br>
+        <div id="gradient2"></div>
+
+        <br><hr><hr><br>
+        <h2 style="background-color: rgb(98, 198, 198);">Direction - Left to Right</h2>
+        <p>The following example shows a linear gradient that starts from the left. It starts red, transitioning to yellow:</p>
+        <h1>Linear Gradient - Left to Right</h1>
+        <p>This linear gradient starts red at the left, transitioning to yellow (to the right):</p>
+
+        <div id="grad1"></div>
+        <br>
+        <div id="grad2"></div>
+
+        <br><hr><hr><br>
+        <h2 style="background-color: rgb(98, 198, 198);">Direction - Diagonal</h2>
+        <p>You can make a gradient diagonally by specifying both the horizontal and vertical starting positions.</p>
+        <p>The following example shows a linear gradient that starts at top left (and goes to bottom right). It starts red, transitioning to yellow:</p>
+        <h1>Linear Gradient - Diagonal</h1>
+        <p>This linear gradient starts red at top left, transitioning to yellow (at bottom right):</p>
+
+        <div id="diagonal1"></div>
+        <br>
+        <div id="diagonal2"></div>
+       
+       
+
+    </body>
+</html>

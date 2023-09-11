@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Gradients</title>
+        <style>
+            #angle1{
+                height: 100px;
+                background-color: red;  /* For browsers that do not support gradients */
+                background-image: linear-gradient(0deg, red, yellow);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #angle2{
+                height: 100px;
+                background-color: red;  /* For browsers that do not support gradients */
+                background-image: linear-gradient(90deg, red, yellow);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #angle3{
+                height: 100px;
+                background-color: red;  /* For browsers that do not support gradients */
+                background-image: linear-gradient(180deg, red, yellow);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #angle4{
+                height: 100px;
+                background-color: red;  /* For browsers that do not support gradients */
+                background-image: linear-gradient(-90deg, red, yellow);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="background-color: silver;">CSS Gradients</h1>
+        <h2 style="background-color: pink;">Using Angles</h2>
+        <p>If you want more control over the direction of the gradient, you can define an angle, instead of the predefined directions (to bottom, to top, to right, to left, to bottom right, etc.). A value of 0deg is equivalent to "to top". A value of 90deg is equivalent to "to right". A value of 180deg is equivalent to "to bottom".</p>
+        
+        <h2>Syntax</h2>
+        <p style="border: 1px solid black; padding: 10px; color:red"><b>background-image: linear-gradient(angle, color-stop1, color-stop2, ...);</b></p>
+        <p>The following example shows how to use angles on linear gradients:</p>
+        
+        <h1>Linear Gradients - Using Different Angles</h1>
+
+        <div id="angle1" style="text-align: center;">0deg</div>
+        <br>
+        <div id="angle2"  style="text-align: center;">90deg</div>
+        <br>
+        <div id="angle3"  style="text-align: center;">180deg</div>
+        <br>
+        <div id="angle4"  style="text-align: center;">-90deg</div>
+       
+    </body>
+</html>

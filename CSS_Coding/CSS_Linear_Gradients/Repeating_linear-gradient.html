@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Gradients</title>
+        <style>
+            #grad1{
+                height: 200px;
+                background-color: red; /* For browsers that do not support gradients */
+                background-image: repeating-linear-gradient(red, blue 10%, green, yellow 20%);
+            }
+            #grad2{
+                height: 200px;
+                background-color: red; /* For browsers that do not support gradients */
+                background-image: repeating-linear-gradient(45deg,red, green 7%, yellow 10%);
+            }
+            #grad3{
+                height: 200px;
+                background-color: red; /* For browsers that do not support gradients */
+                background-image: repeating-linear-gradient(190deg,red, green 7%, yellow 10%);
+            }
+            #grad4{
+                height: 200px;
+                background-color: red; /* For browsers that do not support gradients */
+                background-image: repeating-linear-gradient(90deg,red, green 7%, yellow 10%);
+            }
+            #grad5{
+                height: 200px;
+                background-color: red; /* For browsers that do not support gradients */
+                background-image: repeating-linear-gradient(45deg,red 0px, red 10px, red 10px, green 10px, yellow 20px);
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="background-color: silver;">Repeating a linear-gradient</h1>
+
+        <div id="grad1"></div>
+        
+        <p>A repeating gradient on 45deg axe starting red and finishing green:</p>
+        <div id="grad2"></div>
+
+        <p>A repeating gradient on 190deg axe starting red and finishing green:</p>
+        <div id="grad3"></div>
+
+        <p>A repeating gradient on 90deg axe starting red and finishing green:</p>
+        <div id="grad4"></div>
+
+        <p>A repeating linear gradient with solid stripes:</p>
+        <div id="grad5"></div>
+
+    </body>
+</html>
