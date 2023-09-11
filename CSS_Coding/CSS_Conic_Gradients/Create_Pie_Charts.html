@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Gradients</title>
+        <style>
+            #gradient1{
+                height: 200px;
+                width: 200px;
+                background-color: red; /* For browsers that do not support gradients */
+                background-image: conic-gradient(red,yellow,green);      
+                border-radius: 50%;
+            }
+
+            #grad1{
+                height: 200px;
+                width: 200px;
+                background-color: red; /* For browsers that do not support gradients */
+                background-image: conic-gradient(purple,yellow,green,blue,black);   
+                border-radius: 50%;
+            }
+
+            #grad2{
+                height: 200px;
+                width: 200px;
+                background-color: red; /* For browsers that do not support gradients */
+                background-image: conic-gradient(purple 0deg, purple 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);   
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Gradients</h1>
+        <h1 style="background-color: silver;">Create Pie Charts</h1>
+        <p>Just add <span style="background-color: red;background-color: aliceblue;">border-radius: 50% </span>to make the conic gradient look like a pie:</p>
+       
+        <h2 style="background-color: rgb(98, 198, 198);">Conic Gradient - Pie Chart</h2>
+        
+        <div id="gradient1"></div>
+        <br>
+        <div id="grad1"></div>
+
+        <br><hr><hr><br>
+
+        <p>Here is another pie chart with defined degrees for all the colors:</p>
+       
+        <div id="grad2"></div>
+    </body>
+</html>

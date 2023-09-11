@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Gradients</title>
+        <style>
+            #gradient1{
+                height: 200px;
+                width: 200px;
+                background-color: red; /* For browsers that do not support gradients */
+                background-image: repeating-conic-gradient(red 10%,yellow 20%);      
+                border-radius: 50%;
+            }
+
+            #gradient2{
+                height: 200px;
+                width: 200px;
+                background-color: red; /* For browsers that do not support gradients */
+                background-image: repeating-conic-gradient(purple,yellow,green,blue 20%,black 10%);   
+                border-radius: 50%;
+            }
+
+            #gradient3{
+                height: 200px;
+                width: 200px;
+                background-color: red; /* For browsers that do not support gradients */
+                background-image: repeating-conic-gradient(purple 30%, yellow 10%, green 40%, blue 20%);   
+                border-radius: 50%;
+            }
+
+            #gradient4{
+                height: 200px;
+                width: 200px;
+                background-color: red; /* For browsers that do not support gradients */
+                background-image: repeating-conic-gradient(purple 0deg 10deg, yellow 10deg 20deg, green 10deg 20deg, blue 20deg 30deg);   
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Gradients</h1>
+        <h1 style="background-color: silver;">Repeating a Conic Gradient</h1>
+        <p>The <span style="background-color: red;background-color: aliceblue;">repeating-conic-gradient() </span>function is used to repeat conic gradients:</p>
+       
+        <h2 style="background-color: rgb(98, 198, 198);">Repeating a Conic Gradient</h2>
+        
+        <div id="gradient1"></div>
+        <br>
+        <div id="gradient2"></div>
+        <br>
+        <div id="gradient3"></div>
+
+        <h1>Repeating a Conic Gradient with color-starts and -stops</h1>
+
+        <div id="gradient4"></div>
+
+    </body>
+</html>

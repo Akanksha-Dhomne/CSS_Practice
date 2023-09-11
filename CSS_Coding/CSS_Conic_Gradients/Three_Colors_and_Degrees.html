@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Gradients</title>
+        <style>
+            /* Conic Gradient - Three Colors */
+            #gradient1{
+                height: 200px;
+                width: 200px;
+                background-color: red; /* For browsers that do not support gradients */
+                background-image: conic-gradient(red 45deg, yellow 90deg,green 210deg);      
+            }
+
+             /* Conic Gradient: Five Colors */
+            #grad1{
+                height: 200px;
+                width: 200px;
+                background-color: red; /* For browsers that do not support gradients */
+                background-image: conic-gradient(purple 80deg, yellow 30deg, green 190deg, blue 59deg, black 299deg);   
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Gradients</h1>
+        <h1 style="background-color: silver;">Conic Gradient: Three Colors and Degrees</h1>
+        <p>The following example shows a conic gradient with three colors and a degree for each color:</p>
+        
+        <h1>Conic Gradient - Defined degree for each color</h1>
+    
+        <div id="gradient1"></div>
+
+        <br><hr><hr><br>
+
+        <h2 style="background-color: rgb(98, 198, 198);">Conic Gradient: Five Colors</h2>
+        <p>The following example shows a conic gradient with five colors:</p>
+
+        <div id="grad1"></div>
+       
+    </body>
+</html>

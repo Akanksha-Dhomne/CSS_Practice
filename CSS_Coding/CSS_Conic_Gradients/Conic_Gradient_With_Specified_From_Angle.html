@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Gradients</title>
+        <style>
+            #gradient1{
+                height: 200px;
+                width: 200px;
+                background-color: red; /* For browsers that do not support gradients */
+                background-image: conic-gradient(from 90deg, red,yellow,green);      
+                border-radius: 50%;
+            }
+
+            #gradient2{
+                height: 200px;
+                width: 200px;
+                background-color: red; /* For browsers that do not support gradients */
+                background-image: conic-gradient(from 180deg, purple,yellow,green,blue,black);   
+                border-radius: 50%;
+            }
+
+            #grad1{
+                height: 200px;
+                width: 200px;
+                background-color: red; /* For browsers that do not support gradients */
+                background-image: conic-gradient(at 60% 45%, red,yellow,green);      
+                border-radius: 50%;
+            }
+
+            #grad2{
+                height: 200px;
+                width: 200px;
+                background-color: red; /* For browsers that do not support gradients */
+                background-image: conic-gradient(at 70% 30%, purple,yellow,green,blue,black);   
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Gradients</h1>
+        <h1 style="background-color: silver;">Conic Gradient With Specified From Angle</h1>
+        <p>The [from angle] specifies an angle that the entire conic gradient is rotated by.</p>
+        <p>The following example shows a conic gradient with a from angle of 90deg:</p>
+        
+       
+        <h2 style="background-color: rgb(98, 198, 198);">Conic Gradient - With a from angle</h2>
+        
+        <div id="gradient1"></div>
+        <br>
+        <div id="gradient2"></div>
+
+        <br><hr><hr><br>
+
+        <h2 style="background-color: rgb(98, 198, 198);">Conic Gradient With Specified Center Position</h2>
+        <p>The [at position] specifies the center of the conic gradient.</p>
+        <p>The following example shows a conic gradient with a center position of 60% 45%:</p>
+       
+        <div id="grad1"></div>
+        <br>
+        <div id="grad2"></div>
+    </body>
+</html>

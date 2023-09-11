@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Gradients</title>
+        <style>
+            /* Conic Gradient - Three Colors */
+            #gradient1{
+                height: 200px;
+                width: 200px;
+                background-color: red; /* For browsers that do not support gradients */
+                background-image: conic-gradient(red,yellow,green);      
+            }
+
+             /* Conic Gradient: Five Colors */
+            #grad1{
+                height: 200px;
+                width: 200px;
+                background-color: red; /* For browsers that do not support gradients */
+                background-image: conic-gradient(purple,yellow,green,blue,black);   
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Gradients</h1>
+        <h1 style="background-color: silver;">CSS Conic Gradients</h1>
+        <p>A conic gradient is a gradient with color transitions rotated around a center point.</p>
+        <p>To create a conic gradient you must define at least two colors.</p>
+       
+        <h2>syntax</h2>
+        <p style="border: 1px solid black; padding: 10px; color:red"><b>background-image: conic-gradient([from angle] [at position,] color [degree], color [degree], ...);</b></p>
+        <p>By default, angle is 0deg and position is center.</p>
+        <p>If no degree is specified, the colors will be spread equally around the center point.</p>
+        
+        <h2 style="background-color: rgb(98, 198, 198);">Conic Gradient: Three Colors</h2>
+        <p>The following example shows a conic gradient with three colors:</p>
+    
+        <div id="gradient1"></div>
+
+        <br><hr><hr><br>
+
+        <h2 style="background-color: rgb(98, 198, 198);">Conic Gradient: Five Colors</h2>
+        <p>The following example shows a conic gradient with five colors:</p>
+
+        <div id="grad1"></div>
+       
+    </body>
+</html>
