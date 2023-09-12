@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Shadow Effects</title>
+        <style>
+            .div1{
+                text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+                font-size: 30px;
+            }
+            .div2{
+                text-shadow: 0 0 5px green, 0 0 2px red, 0 0 5px blue, 0 0 4px yellow;
+                font-size: 30px;
+            }
+
+            /* The following example shows a white text with black, blue, and darkblue shadow: */
+            .div3{
+                color: white;
+                text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+                font-size: 30px;
+            }
+            .div4{
+                color: white;
+                text-shadow: 2px 2px 5px red, 3px 3px 2px green, 0 0 5px blue;
+                font-size: 30px;
+            }
+            .div5{
+                text-shadow: 2px 2px 10px red;
+                font-size: 30px;
+            }
+
+            /* You can also use the text-shadow property to create a plain border around some text (without shadows): */
+            .div5{
+                color: white;
+                text-shadow: 2px 2px 5px black,-1px 0 black, 0 1px black, 0 -1px black;
+                font-size: 30px;
+            }
+            .div6{
+                color: purple;
+                text-shadow: 2px 2px 4px black, 0 1px black, -1px 1px black, 0 -1px black;
+                font-size: 30px;
+            }
+            .div7{
+                color: coral;
+                text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                font-size: 30px;
+            }
+            .div8{
+                color: yellowgreen;
+                text-shadow: -1px 0 red, 0 1px blue, 1px 0 green, 0 -1px yellow;
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>CSS Shadow Effects</h1>
+        <h1 style="background-color: khaki;">Multiple Shadows</h1>
+        <p>To add more than one shadow to the text, you can add a comma-separated list of shadows.</p>
+        <h2>The following example shows a red and blue neon glow shadow:</h2>
+    
+        <div class="div1">This is Text-shadow effect!</div>
+        <br>
+        <div class="div2">This is Text-shadow effect!</div>
+      
+        <br><hr>
+
+        <h2>The following example shows a white text with black, blue, and darkblue shadow:</h2>
+        <div class="div3">This is Text-shadow effect!</div>
+        <br>
+        <div class="div4">This is Text-shadow effect!</div>
+
+        <br><hr>
+
+        <h2>You can also use the text-shadow property to create a plain border around some text (without shadows):</h2>
+        <div class="div5">This is Text-shadow effect!</div>
+        <br>
+        <div class="div6">This is Text-shadow effect!</div>
+        <br>
+        <div class="div7">This is Text-shadow effect!</div>
+        <br>
+        <div class="div8">This is Text-shadow effect!</div>
+
+    </body>
+</html>
