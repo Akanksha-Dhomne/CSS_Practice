@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS 2D Transforms</title>
+        <style>
+            div{
+                width: 400px;
+                height: 100px;
+                background-color: palevioletred;
+                border: 1px solid black;
+            }
+
+            div.myDiv{
+                transform: rotate(20deg);
+            }
+
+            div.myDiv2{
+                transform: rotate(-20deg);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>The rotate() Method</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">rotate() </span>  method rotates an element clockwise or counter-clockwise according to a given degree. method rotates an element clockwise or counter-clockwise according to a given degree.</p>
+        <p>The following example rotates the (div) element clockwise with 20 degrees:</p>
+        <p>The rotate() method rotates an element clockwise or counter-clockwise.</p>
+
+        <div>
+            This a normal div element.
+        </div>
+        <br>    
+        <div class="myDiv">
+            This div element is rotated clockwise 20 degrees.
+        </div>
+        <br>   
+        <p>Using negative values will rotate the element counter-clockwise.</p> 
+        <div class="myDiv2">
+            This div element is rotated anti-clockwise -20 degrees.
+        </div>
+    
+    </body>
+</html>
