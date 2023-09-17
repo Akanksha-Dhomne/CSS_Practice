@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container{
+                display: flex;
+            }
+            .navbar{
+                background-color: black;
+                font-size: 20px;
+                padding: 20px;
+                width: 100%;
+            }
+            .navbar a{
+                color: white;
+                padding: 16px 14px;
+                text-decoration: none;
+            }
+            .navbar a:hover{
+                background-color: #6a6666;
+            }
+            @media screen and (max-width: 600px) {
+                  .navbar a{
+                    display: block; 
+                    text-align: center;
+                  }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <a href="#">Home</a>
+                <a href="#">News</a>
+                <a href="#">Contact</a>
+                <a href="#">About</a>
+            </div>
+        </div>
+    </body>
+</html>
